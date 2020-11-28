@@ -1,3 +1,91 @@
+## 여러 행 정렬 (align-content)
+
+```css
+.container {
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-between;
+    align-content: space-around;
+    align-content: space-evenly;
+}
+
+flex-wrap: wrap;가 설정된 상태이고,
+아이템들의 행이 2줄 이상 되었을 때 수직축 방향 정렬
+
+stretch: 아이템의 수직축이 쭉 늘어나면서 정렬
+flex-start: 위에서 시작, 왼쪽에서 오른쪽으로 정렬
+flex-end: 아래에서 시작, 왼쪽에서 오른쪽으로 정렬
+center: 가운데서 시작, 왼쪽에서 오른쪽으로 정렬
+space-between: 수직축에서 맨위와 맨아래로 정렬 (wrap 적용 시)
+space-around: 수직축에서 각 아이템의 위아래 여백을 가지고 정렬 (wrap 적용 시)
+space-evenly: 수직축에서 각 아이템의 위아래 일정한 여백을 가지고 정렬 (wrap 적용 시)
+```
+<br />
+
+---
+
+## 수직축 방향 정렬 (align-items)
+<br />
+
+```css
+.container {
+    align-items: stretch;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: baseline;
+}
+
+stretch: 아이템들이 수직축 방향으로 끝까지 쭉 늘어남
+flex-start: 아이템들을 시작점으로 정렬, flex-direction이 row일 때 위치는 위, column일 때 위치는 왼쪽으로 정렬
+flex-end: 아이템들을 끝으로 정렬, flex-direction이 row일 때 위치는 위, column일 때 위치는 왼쪽으로 정렬
+center: 아이탬들을 가운데로 정렬
+baseline: 아이템들을 텍스트 베이스라인 기준으로 정렬
+```
+
+```css
+한 가운데 정렬 방법
+.container {
+    display: flex;
+    jusityfy-contenr: center;
+    align-item: center;
+}
+
+위와 같이 해주면 아이템이 정중앙에 배치된다
+```
+
+<br />
+
+---
+
+## 메인축 방향 정렬 (justify-content)
+<br />
+
+```css
+.container {
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+flex-start: 왼쪽에 붙어서 정렬
+flex-end: 오른쪽에 붙어서 정렬
+center: 가운데 정렬
+space-between: 양 끝과 가운데 정렬
+space-around: 각 아이템의 양쪽에 여백을 두고 정렬
+space-evenly: 각 아이템의 균일하게 여백을 두고 정렬(around보다 좁혀짐)
+evenly의 문제점은 IE와 Edge에서 지원이 안됨
+```
+
+<br />
+
+---
 
 ## 줄넘김과 배치 방향 동시 설정 (flex-flow)
 
@@ -8,6 +96,7 @@
 
 row wrap: 왼쪽에서 오른쪽 정렬과 동시에 줄바꿈 처리
 ```
+<br />
 
 ---
 
