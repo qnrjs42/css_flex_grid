@@ -9,9 +9,13 @@
 	<style>
 		.flex-container {
 			display: flex;
-			flex-wrap: wrap;
-			align-content: flex-start;
-			height: 300px;
+		}
+		.flex-item:nth-child(1) {
+			flex-shrink: 0;
+			width: 100px;
+		}
+		.flex-item:nth-child(2) {
+			flex-grow: 1;
 		}
 		
 	</style>

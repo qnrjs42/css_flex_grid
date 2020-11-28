@@ -1,3 +1,63 @@
+
+## 유연하게 줄이기 (flex-shrink)
+
+flex-shrink는 flex-grow와 쌍을 이루는 속성, 아이템이 flex-basis의 값보다 작아질 수 있는지를 결정<br/>
+0보다 큰 값이 세팅되면 해당 아이템이 유연한 박스로 변하고 flex-basis보다 작아짐<br/>
+기본값이 1, 따로 세팅하지 않아도 아이템이 flex-basis보다 작아질 수 있음
+
+
+```css
+.item {
+    flex-basis: 150px;
+    flex-shrink: 1;
+}
+```
+<br />
+
+---
+## 유연하게 늘리기 (flex-grow)
+
+flex-grow는 아이템이 flex-basis의 값보다 커질 수 있는지 결정하는 속성<br/>
+0보다 큰 값이 세팅되면 해당 아이템이 유연한 박스로 변하고 원래의 크기보다 커지며 빈공간을 메움<br/>
+기본 값은 0
+
+
+```css
+.item {
+    flex-grow: 1;
+}
+```
+<br />
+
+---
+
+## 유연한 박스의 기본 영역 (flex-basis)
+
+- flex 아이템들의 기본 크기를 설정
+- flex-direction이 row일 때 너비
+- flex-direction이 column일 때 높이
+
+```css
+.item {
+    flex-basis: auto; /* 기본 값 */
+    flex-basis: 0;
+    flex-basis: 50%;
+    flex-basis: 300px;
+    flex-basis: 10rem;
+    flex-basis: content;
+}
+
+flex-basis: 100px; 
+100px이하 아이템들의 width는 100px로 늘어났고,
+100px이 넘어갔던 아이템은 그대로 유지
+
+width: 100px; 
+컨텐츠 내용이 뭘 들어있던 간에 강제로 너비를 맞춤
+```
+<br />
+
+---
+
 ## 여러 행 정렬 (align-content)
 
 ```css
