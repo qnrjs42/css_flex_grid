@@ -1,3 +1,61 @@
+## 컨테이너 가운데 정렬, 마지막 아이템만 우측 정렬
+
+```css
+.flex-container {
+    display: flex;
+    width: 600px;
+    margin: 0 auto;
+}
+.flex-item {
+    width: 150px;
+}
+.flex-item:last-child {
+    margin-left: auto;
+}
+```
+
+<br/>
+
+---
+
+## 반응형 컬럼
+
+```css
+.flex-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    border: 10px solid red;
+}
+.flex-item {
+    flex: 1 auto;
+}
+@media (min-width: 600px) {
+    .flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .flex-item {
+        width: 50%;
+        /* flex: 0 auto; */
+        /* flex-basis: 50%; */
+    }
+}
+@media (min-width: 900px) {
+    .flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .flex-item {
+        width: 30%;
+    }
+}
+```
+
+<br />
+
+---
+
 ## flex-grow, flex-shrink, flex-basis 한 번에 사용 (flex)
 
 ```css
@@ -28,8 +86,6 @@
 .flex-item:nth-child(3) {
     width: 20%;
 }
-
-
 ```
 <br />
 
