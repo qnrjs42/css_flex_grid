@@ -1,7 +1,35 @@
+## figure로 이미지 사용
+
+- 어떤 이미지는 가로로 길고, 어떤 이미지는 세로로 길 수 있기 때문에 background-image로 사용
+
+```html
+<figure class="user-photo" style="background-image: url(images/ilbuni.png);"></figure>
+```
+
+```css
+.user-item {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+.user-photo {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    margin-right: 0.5em;
+    border: 2px solid #333;
+    border-radius: 50%;
+    background-color: gold;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150%;
+}
+```
+
+---
+
 ## 배치 순서 (order)
 
 - 각 아이템들의 시각적 나열 순서를 결정
-
 
 ```css
 .item:nth-child(1) {
