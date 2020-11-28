@@ -1,3 +1,39 @@
+## flex-grow, flex-shrink, flex-basis 한 번에 사용 (flex)
+
+```css
+.item {
+    flex: 1;
+    /* flex-grow: 1; flex-shrink: 1; flex-basis: 0%; */
+    flex: 1 1 auto;
+    /* flex-grow: 1; flex-shrink: 1; flex-basis: auto; */
+    flex: 1 500px;
+    /* flex-grow: 1; flex-shrink: 1; flex-basis: 500px; */
+}
+```
+
+```css
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-item {
+    flex: 1 1 auto;
+}
+.flex-item:nth-child(1) {
+    width: 20;
+}
+.flex-item:nth-child(2) {
+    width: 60%;
+}
+.flex-item:nth-child(3) {
+    width: 20%;
+}
+
+
+```
+<br />
+
+---
 
 ## 유연하게 줄이기 (flex-shrink)
 
@@ -15,6 +51,7 @@ flex-shrink는 flex-grow와 쌍을 이루는 속성, 아이템이 flex-basis의 
 <br />
 
 ---
+
 ## 유연하게 늘리기 (flex-grow)
 
 flex-grow는 아이템이 flex-basis의 값보다 커질 수 있는지 결정하는 속성<br/>
