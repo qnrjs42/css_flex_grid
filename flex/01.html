@@ -9,17 +9,17 @@
 	<style>
 		.flex-container {
 			display: flex;
+			height: 100vh;
+			align-items: center;
 		}
 		.flex-item {
 			
 		}
-		.flex-item:nth-child(1){
-			flex: 0 0 auto;
-			width: 150px;
-		}
-		.flex-item:nth-child(3){
-			flex: 0 0 auto;
-			width: 200px;
+		/* .flex-item:nth-child(1){
+			align-self: flex-start;
+		} */
+		.flex-item:nth-child(2){
+			align-self: stretch;
 		}
 		
 		
@@ -27,10 +27,9 @@
 </head>
 <body>
 	<div class="flex-container">
-		<div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, laudantium illo consequatur dolores laborum assumenda?</div>
-		<div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, laudantium illo consequatur
-			dolores laborum assumenda?</div>
-		<div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+		<div class="flex-item">AAAAAAA</div>
+		<div class="flex-item">BBB</div>
+		<div class="flex-item">CCC</div>
 	</div>
 </body>
 </html>

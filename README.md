@@ -1,3 +1,40 @@
+## 배치 순서 (order)
+
+- 각 아이템들의 시각적 나열 순서를 결정
+
+
+```css
+.item:nth-child(1) {
+    order: 1;
+}
+```
+
+<br/>
+
+---
+
+## 수직축으로 아이템 정렬 (align-self)
+
+- align-items: 전체 아이템 수직축 방향 정렬
+- align-self: 아이템의 수직축 방향 정렬
+- 기본값 auto, 기본적으로 align-items 설정 상속 받음
+- align-self는 align-items보다 우선권이 있음
+
+```css
+.item:nth-child(1) {
+    align-self: auto;
+    align-self: stretch;
+    align-self: flex-start;
+    align-self: flex-end;
+    align-self: center;
+    align-self: baseline;
+}
+```
+
+<br/>
+
+---
+
 ## 컨테이너 가운데 정렬, 마지막 아이템만 우측 정렬
 
 ```css
