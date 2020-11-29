@@ -31,6 +31,7 @@
 
 .footer {
     padding: 1rem;
+    border-top: 1px solid lightgray;
     text-align: center;
 }
 
@@ -72,4 +73,45 @@ label[for="modal-switch"] span {
     width: 1px;
     height: 1px;
     opacity: 0;
+}
+
+@media (min-width: 1024px) {
+    .page {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header {
+        width: 100%;
+    }
+    .menu {
+        width: 100%;
+    }
+    .primary {
+        order: 2;
+        width: 60%;
+    }
+    .secondary {
+        width: 20%;
+    }
+    .secondary-a {
+        order: 1;
+    }
+    .secondary-b {
+        order: 3;
+    }
+    
+    .footer {
+        width: 100%;
+        order: 4;
+    }
+}
+
+@media (min-width: 1400px) {
+    .primary {
+        /* width: calc(100% - 600px); */
+        flex: 1 1 auto;
+    }
+    .secondary {
+        width: 300px;
+    }
 }
