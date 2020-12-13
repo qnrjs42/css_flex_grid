@@ -1,3 +1,18 @@
+# grid
+
+- 그리드 컨테이너 (Grid Container): Grid 전체 영역
+- 그리드 아이템   (Grid Item): 그리드 컨테이너 자식 요소들
+- 그리드 트랙     (Grid Track): 그리드의 행(Row) 또는 열(Column)
+- 그리드 셀       (Grid Cell): 그리드 한 칸
+- 그리드 라인     (Grid Line): 그리드 셀을 구분하는 선
+- 그리드 번호     (Grid Number): 그리드 라인의 각 번호
+- 그리드 갭       (Grid Gap): 그리드 셀 사이의 간격
+- 그리드 영역     (Grid Area): 그리드 라인으로 둘러싸인 사격형 영역, 그리드 셀의 집합
+- 
+
+
+---
+
 ## figure로 이미지 사용
 
 - 어떤 이미지는 가로로 길고, 어떤 이미지는 세로로 길 수 있기 때문에 background-image로 사용
